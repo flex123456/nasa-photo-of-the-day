@@ -5,8 +5,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 function CreateCard(props) {
 
 
- return <div className='ui centered card' >
-  <Card>
+ return <Card>
     <Image src={props.data.url} alt= 'nasa photo of the day' wrapped ui={false} />
     <Card.Content>
       <Card.Header>{props.data.title}</Card.Header>
@@ -24,7 +23,6 @@ function CreateCard(props) {
       </a>
     </Card.Content>
   </Card>
-  </div>
 }
 
 export default CreateCard;
