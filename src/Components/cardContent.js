@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import Card from './Card';
+import CreateCard from './Card';
 const CardContent = () => {
     const [nasaData, setNasaData]= useState([]);
     console.log(nasaData)
@@ -11,7 +11,7 @@ const CardContent = () => {
 
       }, []);
     
-    return <Card data={nasaData} />
+    return <CreateCard data={nasaData} />
 }
 
 export default CardContent;
